@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-%w{zsh}.each do |pkg|
+%w{zsh tree mysql git}.each do |pkg|
   package pkg do
     action :install
   end
