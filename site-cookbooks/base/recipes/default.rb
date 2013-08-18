@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-%w{zsh tree mysql mysql-devel git}.each do |pkg|
+%w{zsh tree mysql-devel git}.each do |pkg|
   package pkg do
     action :install
   end
@@ -22,4 +22,9 @@ group "wheel" do
   action [:modify]
   members ["junya"]
   append true
+end
+
+service "mysqld" do
+  supports status: true, restart: true, reload: true
+  action   [ :enable, :start ]
 end

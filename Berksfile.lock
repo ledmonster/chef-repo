@@ -3,6 +3,9 @@
     "yum": {
       "locked_version": "2.3.0"
     },
+    "mysql": {
+      "locked_version": "3.0.2"
+    },
     "python": {
       "locked_version": "1.3.6"
     },
@@ -10,6 +13,9 @@
       "locked_version": "0.6.3",
       "git": "git://github.com/markolson/chef-ssh.git",
       "ref": "b1abfed314edd82dd19e4ed358b4f967cbe793e7"
+    },
+    "openssl": {
+      "locked_version": "1.0.2"
     },
     "build-essential": {
       "locked_version": "1.4.0"
