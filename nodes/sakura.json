@@ -1,6 +1,14 @@
 {
+    "python" : {
+        "install_method" : "source",
+        "version" : "2.7.5",
+        "checksum" : "6334b666b7ff2038c761d7b27ba699c1"
+    },
     "run_list":[
+        "recipe[python]",
         "recipe[yum::epel]",
-        "recipe[base]"
+        "recipe[ssh]",
+        "recipe[base]",
+        "recipe[sps]"
     ]
 }
